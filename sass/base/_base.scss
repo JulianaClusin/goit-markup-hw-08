@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    }
+    
+*,
+::before,
+::after {
+  box-sizing: inherit;
+    }
+    
+body {
+    background-color: $title-theme-color;
+    font-family: $main-font;
+    font-size: 14px;
+    color: $text-main-color;
+    letter-spacing: 0.03em
+    }
+    
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+
+.navigation {
+ display: flex;
+}
+
+.link {
+text-decoration: none;
+display: block;
+}
+         
+.list {
+    list-style: none;
+    @extend  %margin-padding-zero;
+    }

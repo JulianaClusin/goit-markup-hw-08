@@ -1,0 +1,219 @@
+.header {
+  position: relative;
+  border: 1px solid #ECECEC;
+  }
+  
+@media screen and (max-width: 767px) {
+   .navigation {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 60px;
+    }
+
+  .menu-container {
+    background-color: $title-theme-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 20px;
+}
+}
+
+@media screen and (min-width: 767px) {
+  .navigation {
+    align-items: baseline;
+  }
+  .navigation-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list-item:not(:last-child){
+    margin-right: 50px;
+  }
+
+}
+  
+  @media screen and (max-width: 767px) {
+    .menu-container {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+    .menu-container.is-open {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .menu-container {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .navigation-list {
+      margin-bottom: 60px;
+    }
+    .navigation-list-link {
+      display: inline-block;
+    }
+    .navigation-list-link.studio {
+      padding-bottom: 8px;
+    }
+    .navigation-list-link.portfolio {
+      padding-bottom: 8px;
+    }
+  }
+
+   .navigation-list-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %text-settings;
+    position: relative;
+
+    @media screen and (min-width: 768px){
+    &.link {
+      color: $text-main-color;
+      padding-top: 32px;
+      padding-bottom: 32px;
+     }}
+
+      &:hover, &:focus {
+        color: $accent-color;
+    }
+   }
+
+   .navigation-list-item{
+   @media screen and (max-width: 480px) {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        text-align: center;
+        }
+      }
+    }
+  
+   @media screen and (min-width: 780px) {
+  .navigation-list-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+  }
+  }
+   }
+
+    .navigation-list-link.studio::after,
+    .navigation-list-link.portf::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+    }
+  
+    .navigation-list-link.studio:hover::after ,
+    .navigation-list-link.portf:hover::after  {
+     background-color: $text-address-color;
+  }
+  
+  .navigation-list-link.studio,
+  .navigation-list-link.portf {
+      color: $accent-color;
+      transition: color 1030ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 1030ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus{
+        color: $text-address-color;
+        }
+    }
+  
+  .address {
+  display: block;
+  font-style: normal;
+  @extend %text-settings;
+
+  @media screen and (min-width: 1200px) {
+    &-nav {
+      display: flex;
+      }
+  } 
+  }
+
+.address-nav-link {
+  color: $text-address-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover, &:focus{
+  color: $accent-color;
+  }
+}
+@media screen and (min-width: 786px) {
+  .address-nav-link {
+    display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+    }
+}
+  
+  .address-nav-list {
+  @extend %text-settings;
+  @media screen and (max-width: 480px) {
+    & {
+      display: block;
+    }
+      &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+  &:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+}
+
+.address-nav-list-svg {
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  fill: $text-address-color;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-nav-link:hover .address-nav-list-svg,
+.address-nav-link:focus .address-nav-list-svg {
+  fill: $accent-color;
+} 
+
+.icon-cross {
+  width: 24px;
+  height: 16px;
+
+  &:hover, &:focus {
+    fill: $accent-color
+  }
+}
+
+.icon-menu {
+  width: 19px;
+  height: 19px;
+
+  &:hover, &:focus {
+    fill: $accent-color
+  }
+
+}

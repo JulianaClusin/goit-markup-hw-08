@@ -1,0 +1,25 @@
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right:85px; 
+  color: $text-logo-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  animation-duration: 10000ms;
+
+  .logo-web {
+    color: $accent-color;
+    }
+    
+  &-studio{
+    color:$text-white-color;
+    }
+  }
+    
+.logo.foot.link {
+    @extend %margin-padding-zero;
+    margin-bottom: 8px;
+    }

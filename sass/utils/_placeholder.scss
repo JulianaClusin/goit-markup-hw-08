@@ -1,0 +1,40 @@
+%text-settings {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+       
+%display-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+ }
+
+ %align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ }
+    
+ %margin-padding-zero {
+     margin: 0;
+     padding: 0;
+ }
+
+ %modal-form-setting {
+    display: block;
+    width: 100%;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(75, 75, 75, 20%) ;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+       
