@@ -1040,7 +1040,7 @@ button {
   color: #2196F3;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 1200px) {
   .address-nav-link {
     display: flex;
     flex-wrap: nowrap;
@@ -1148,6 +1148,12 @@ button {
 @media screen and (min-width: 768px) {
   .features-list-heading {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .features-section:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1259,6 +1265,12 @@ button {
 
 .section.team {
   background-color: #F5F4FA;
+}
+
+@media screen and (max-width: 786px) {
+  .section-title-team:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .section-title-team {
@@ -1384,8 +1396,29 @@ button {
 }
 
 footer {
+  text-align: center;
   background-color: #2F303A;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section-address {
+    margin-bottom: 50px;
+  }
+  .footer-section.join-in {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-subscribe-input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .footer-subscribe-label {
+    top: 20%;
+  }
 }
 
 .address-footer {
@@ -1409,8 +1442,16 @@ footer {
   margin-bottom: 9px;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-flex {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-flex {
+    padding-top: 0px;
     padding-bottom: 60px;
   }
   .footer-mobile {
@@ -1432,14 +1473,6 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-  }
-  .footer-subscribe-input {
-    width: 450px;
-    height: 50px;
-    margin-bottom: 20px;
-  }
-  .footer-subscribe-label {
-    top: 20%;
   }
   .footer-subscribe-button {
     display: flex;

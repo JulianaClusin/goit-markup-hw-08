@@ -157,12 +157,13 @@
   color: $accent-color;
   }
 }
-@media screen and (min-width: 786px) {
+
+@media screen and (min-width: 1200px) {
   .address-nav-link {
-    display: flex;
+  display: flex;
   flex-wrap: nowrap;
   align-content: flex-start;
-    }
+  }
 }
   
   .address-nav-list {
