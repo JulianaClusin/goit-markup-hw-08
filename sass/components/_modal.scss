@@ -23,7 +23,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     margin: 0px;
@@ -32,6 +32,23 @@
     }
 }
 
+@media screen and (min-width:480px){
+  .modal-form {
+    width: 450px;
+  height: 609px;
+  }
+}
+
+ @media screen and (min-width: 1200px){
+ .modal-form-title{
+  line-height: 23px;
+ }
+ .modal-form {
+  width: 528px;
+  height: 581px;
+ }
+}
+    
 .modal-form-input {
   height: 40px;
   padding-left: 42px;

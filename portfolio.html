@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Web-Studio" content="Создание сайтов для любого бизнеса">
-    <title>Web-Studio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.min.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Web-Studio" content="Создание сайтов для любого бизнеса">
+        <title>Web-Studio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+    <body>
     <!-- Шапка -->
-    <header class="header">
-        <nav class="container navigation" >
-             <a class="logo link animate__pulse" lang="en" href="./index.html"> 
-                <span class="logo-web" > Web </span> Studio </a> 
-            <ul class="navigation-list list">
-            <li class="navigation-list-item"> 
-                <a class="navigation-list-link stud link"
-                 href="./index.html"> Cтудия  </a></li>
-            <li class="navigation-list-item">
-                 <a class="navigation-list-link portf link"
-                  href="./portfolio.html"> Портфолио  </a></li>
-            <li class="navigation-list-item"> 
-                <a class="navigation-list-link contacts link" href="  "> Контакты  </a></li>
-            </ul>
-            <address class="address">
-                <ul class="address-nav list">
-                <li class="address-nav-list">
-                    <a class="address-nav-link link" 
-                    href="mailto:info@devstudio.com">
-                    <svg class="address-nav-list-svg">
-                        <use href="./images/sprite.svg#icon-email"></use>
+        <header class="header">
+            <nav class="container navigation">
+                 <a class="logo link animate__pulse" lang="en" href="./index.html"> 
+                <span class="logo-web" > Web</span>Studio </a>
+            <div class="menu-container" id="menu-container" data-menu aria-expanded="true">
+                <ul class="navigation-list list">
+                <li class="navigation-list-item "> 
+                    <a class="navigation-list-link studio link"
+                     href="./index.html"> Cтудия </a></li>
+                <li class="navigation-list-item">
+                     <a class="navigation-list-link port link"
+                      href="./portfolio.html"> Портфолио  </a></li>
+                <li class="navigation-list-item"> 
+                    <a class="navigation-list-link contact link" href="  "> Контакты  </a></li>
+                </ul>
+                <address class="address">
+                    <ul class="address-nav list">
+                    <li class="address-nav-list">
+                        <a class="address-nav-link link" 
+                        href="mailto:info@devstudio.com">
+                        <svg class="address-nav-list-svg">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                         info@devstudio.com  </a></li>
+                         <li class="address-nav-list">
+                        <a class="address-nav-link link"
+                        href="tell:+380961111111"> 
+                        <svg class="address-nav-list-svg">
+                            <use href="./images/sprite.svg#icon-mobile"></use>
+                        </svg>
+                        +38 096 111 11 11  </a> 
+                    </li></ul>
+                </address> 
+            </div>
+            <button type="button" class="menu-button is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+                    <svg
+                    width="40px" height="40px"
+                    aria-label="переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-close_40px" ></use>
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu_40px"></use>
                     </svg>
-                     info@devstudio.com  </a></li>
-                     <li class="address-nav-list">
-                    <a class="address-nav-link link"
-                    href="tell:+380961111111"> 
-                    <svg class="address-nav-list-svg">
-                        <use href="./images/sprite.svg#icon-mobile"></use>
-                    </svg>
-                    +38 096 111 11 11  </a> 
-                </li></ul>
-                
-            </address>  
-        </nav>
-    </header>
+                </button>
+            </nav>
+        </header>
 
 <!--Основа-->
 <main>
@@ -57,7 +70,6 @@
         <li class="filter-portfolio-button work-button"> <button type="button" > Дизайн</button></li>
         <li class="filter-portfolio-button work-button"> <button type="button" > Маркетинг</button></li>
     </ul>
-    <!--Третья, шестая и девятая картинка берет свойство высоты авто, а другие нет,почему? -->
     <ul class="portfolio list link">
         <li class="portfolio-list">
             <a class="portfolio-list-link link" href="">
@@ -236,6 +248,7 @@
     </footer>
 </div>
 </footer>
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
