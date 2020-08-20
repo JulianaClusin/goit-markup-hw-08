@@ -1041,6 +1041,9 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
   .portfolio-list {
     width: calc((100% - 30px) / 2);
   }
@@ -1049,8 +1052,8 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200x) {
-  .portfolio {
+@media screen and (min-width: 1200) and (max-width: 1200px) {
+  .portfolio-list {
     width: calc((100% - 60px) / 3);
   }
   .portfolio-list:not(:nth-last-child(-n+3)) {
