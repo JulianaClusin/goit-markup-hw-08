@@ -5,26 +5,29 @@
   justify-content: space-between;
   margin: 0px;
   align-items: center;
-  &-list {
+  }
+  
+ @media screen and (min-width: 768px) {
+  .clients-list{
+    width: calc((100% - 60px) / 3);
+    // &:nth-child(n+4) {
+    //   margin-bottom: 0px;
+    // }}
+  }
+}
+
+@media screen and (min-width: 480px),screen and (max-width: 768px) {
+  .clients-list {
     width: calc((100% - 30px) / 2)
   }
-  &-list:nth-child(-n+4){
+  .clients-list:nth-child(-n+4){
     margin-bottom: 30px;
   }
   }
 
- @media screen and (min-width: 768px) {
-  .clients-list{
-    width: calc((100% - 60px) / 3);
-    &:nth-child(n+4) {
-      margin-bottom: 0px;
-    }}
-  }
-
-@media screen and (min-width: 1020px){
+@media screen and (min-width: 1200px){
   .clients{
     flex-wrap: nowrap;
-    align-items: baseline;
   }
   .clients-list-logo{
     width: 170px;

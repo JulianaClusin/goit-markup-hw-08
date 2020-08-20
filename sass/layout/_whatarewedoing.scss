@@ -1,11 +1,12 @@
-.section.doing {
+@media screen and (max-width: 1200px) {
+.section-doing {
+  visibility: hidden;
   display: none;
 }
-
-@media screen and (min-width: 1200px) {
-  .section {
-    display: block;
 }
+
+.section-doing {
+  padding-bottom: 94px;
 }
 
 .section-title {

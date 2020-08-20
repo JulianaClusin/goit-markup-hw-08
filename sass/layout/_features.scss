@@ -28,17 +28,24 @@
     justify-content: space-between;
     align-items: baseline;
   }
-  .features-section{
-    width: calc((100% - 30px) / 2);
   }
-  .features-section:nth-child(-n+2){
-    margin-bottom: 30px;
-  }
+
+  @media screen and (min-width: 768px), 
+  screen and (max-width: 1199px){
+    .features-section{
+      width: calc((100% - 30px) / 2);
+    }
+    .features-section:nth-child(-n+2){
+      margin-bottom: 30px;
+    }
   }
   
   @media screen and (min-width: 1200px){
     .features-list {
       flex-wrap: nowrap;
+    }
+    .features-section{
+     margin-left: 30px;;
     }
   }
    
