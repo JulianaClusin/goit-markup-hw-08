@@ -30,8 +30,7 @@
   }
   }
 
-  @media screen and (min-width: 768px), 
-  screen and (max-width: 1199px){
+  @media(min-width: 768px) and (max-width: 1199px){
     .features-section{
       width: calc((100% - 30px) / 2);
     }
