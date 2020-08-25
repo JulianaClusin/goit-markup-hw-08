@@ -352,7 +352,7 @@ template {
   align-items: baseline;
 }
 
-.backdrop, .section-title-text {
+.section-title-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -893,12 +893,28 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 94px 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-form {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .backdrop {
+    padding: 94px 0;
+  }
+  .modal-form {
+    width: 450px;
+    height: 609px;
   }
 }
 
@@ -913,22 +929,6 @@ button {
   }
   .modal-form-custom-checkbox {
     margin-left: 12px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding: 94px 15px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .backdrop {
-    padding: 94px 0;
-  }
-  .modal-form {
-    width: 450px;
-    height: 609px;
   }
 }
 
