@@ -18,10 +18,10 @@
             <div class="menu-container" id="menu-container" data-menu aria-expanded="true">
                 <ul class="navigation-list list">
                 <li class="navigation-list-item "> 
-                    <a class="navigation-list-link studio link"
+                    <a class="navigation-list-link link"
                      href="./index.html"> Cтудия </a></li>
                 <li class="navigation-list-item">
-                     <a class="navigation-list-link port link"
+                     <a class="navigation-list-link portf link"
                       href="./portfolio.html"> Портфолио  </a></li>
                 <li class="navigation-list-item"> 
                     <a class="navigation-list-link contact link" href="  "> Контакты  </a></li>
@@ -489,10 +489,11 @@
 <!-- Подвал -->
 
 <footer>
-    <div class="container">
-     <div class="footer-flex">
+    <div class="container footer">
+       <div class="footer-flex">
+           <div class="footer-mobile">
          <div class="footer-section-address">
-        <a class="logo foot link" lang="en" href="./index.html"> <span class="logo-web" > Web </span> <span class="logo-studio" >Studio</span>  </a>  
+        <a class="logo foot link" lang="en" href="./index.html"> <span class="logo-web" >Web</span><span class="logo-studio">Studio</span>  </a>  
     <address class="address-footer text" >
         г. Киев, пр-т Леси Украинки, 26  </address>
     
@@ -527,13 +528,15 @@
             </svg></a></li>
     </ul>
     </div>
+    </div>
     <div class="footer-subscribe">
         <b class="join-in-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
+        <div class="div-subscribe-form">
         <form action="#" class="footer-subscribe-form">
             <input type="email" id="subscribe-email" name="footer-email" placeholder=" " class="footer-subscribe-input" />
             <label for="subscribe-email" class="footer-subscribe-label">E-mail</label>
             <button type="submit" class="footer-subscribe-button hero-title-button">
-                <span>Подписатьcя</span>
+                <span class="footer-subscribe-button-text">Подписатьcя</span>
                 <svg width="24" height="24">
                     <use href="./images/sprite.svg#icon-icon-send"></use>
                 </svg>
@@ -541,9 +544,8 @@
         </form>
     </div>
     </div>
+    </div>
     </footer>
-</div>
-</footer>
 <script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
