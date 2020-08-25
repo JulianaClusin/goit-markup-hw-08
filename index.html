@@ -120,14 +120,23 @@
         <div class="container"><h2 class="section-title"> Чем мы занимаемся </h2>
         <ul class="what-are-we-doing list"> 
             <li class="section-title-list list">  
-                <img class="section-title-image" src="./images/box1.jpg" srcset="./images/box1@2x.jpg 2x" width="370" height="294" alt="Фото ноутбук">
+                <img class="section-title-image" 
+                src="./images/box1.jpg" 
+                srcset="./images/box1.jpg 1x,./images/box1@2x.jpg 2x" 
+                width="370" height="294" alt="Фото ноутбук">
                 <h3 class="section-title-text">Десктопные приложения</h3>
             </li>
             <li class="section-title-list list"> 
-                <img class="section-title-image"  src="./images/box2.jpg" srcset="./images/box2@2x.jpg 2x" width="370" height="294" alt="Фото телефон">
+                <img class="section-title-image"  
+                src="./images/box2.jpg" 
+                srcset="./images/box2.jpg 1x,./images/box2@2x.jpg 2x" 
+                width="370" height="294" alt="Фото телефон">
                 <h3 class="section-title-text">Мобильные приложения</h3> </li>
             <li class="section-title-list list">
-                <img class="section-title-image"  src="./images/box3.jpg" srcset="./images/box3@2x.jpg 2x" width="370" height="294" alt="Фото компьютер">
+                <img class="section-title-image"  
+                src="./images/box3.jpg" 
+                srcset="./images/box3.jpg 1x,./images/box3@2x.jpg 2x" 
+                width="370" height="294" alt="Фото компьютер">
                 <h3 class="section-title-text">Дизайнерские решения</h3> </li>
         </ul>
     </div> 
@@ -138,7 +147,44 @@
         <h2 class="section-title team" > Наша команда </h2>
         <ul class="team-list list"> 
         <li class="section-title-team" > 
-            <img src="./images/igor.jpg" srcset="./images/igor@2x.jpg 2x" width="270" height="260" alt="Фотография Николай Кучеренко">
+            <picture>
+                <source
+                  srcset="
+                    ./images/team-images/igor-mobile.jpg 1x,
+                    ./images/team-images/igor-mobile@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-images/igor-desktop.jpg 1x,
+                    ./images/team-images/igor-desktop@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-images/igor-tablet.jpg 1x,
+                    ./images/team-images/igor-tablet@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  srcset="
+                    ./images/team-images/igor-mobile.jpg    1x,
+                    ./images/team-images/igor-mobile@2x.jpg 2x,
+                    ./images/team-images/igor-tablet.jpg    1x,
+                    ./images/team-images/igor-tablet@2x.jpg 2x,
+                    ./images/team-images/igor-desktop.jpg      1x,
+                    ./images/team-images/igor-desktop@2x.jpg   2x
+                  "
+                  src="./images/team-images/igor-mobile.jpg"
+                  alt="фото Игорь Демьяненко"
+                />
+              </picture>
              <h3 class="section-title-team-name">Игорь Демьяненко</h3>
             <p class="section-title-team-text" lang="en"> Product Designer</p> 
             <ul class="social link list">
@@ -165,7 +211,44 @@
             </ul>
         </li>
         
-        <li class="section-title-team" > <img src="./images/olga.jpg" srcset="./images/olga@2x.jpg 2x" width="270" height="260" alt="фото Ольга Иванова">
+        <li class="section-title-team" >  <picture>
+            <source
+              srcset="
+                ./images/team-images/olga-mobile.jpg 1x,
+                ./images/team-images/olga-mobile@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/team-images/olga-desktop.jpg 1x,
+                ./images/team-images/olga-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/team-images/olga-tablet.jpg 1x,
+                ./images/team-images/olga-tablet@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              srcset="
+                ./images/team-images/olga-mobile.jpg    1x,
+                ./images/team-images/olga-mobile@2x.jpg 2x,
+                ./images/team-images/olga-tablet.jpg    1x,
+                ./images/team-images/olga-tablet@2x.jpg 2x,
+                ./images/team-images/olga-desktop.jpg      1x,
+                ./images/team-images/olga-desktop@2x.jpg   2x
+              "
+              src="./images/team-images/olga-mobile.jpg"
+              alt="фото Ольга Репина"
+            />
+          </picture>
             <h3 class="section-title-team-name">Ольга Репина</h3>
         <p class="section-title-team-text" lang="en"> Frontend Developer </p> 
         <ul class="social link list">
@@ -192,7 +275,45 @@
         </ul>
     </li>
     
-       <li class="section-title-team"> <img src="./images/nicolae.jpg" srcset="./images/nicolae@2x.jpg 2x" width="270" height="260" alt="фото Андрей Шевченко">
+       <li class="section-title-team"> 
+        <picture>
+            <source
+              srcset="
+                ./images/team-images/nicolae-mobile.jpg 1x,
+                ./images/team-images/nicolae-mobile@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="
+                ./images/team-images/nicolae-desktop.jpg 1x,
+                ./images/team-images/nicolae-desktop@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/team-images/nicolae-tablet.jpg 1x,
+                ./images/team-images/nicolae-tablet@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 768px)"
+            />
+            <img
+              srcset="
+                ./images/team-images/nicolae-mobile.jpg    1x,
+                ./images/team-images/nicolae-mobile@2x.jpg 2x,
+                ./images/team-images/nicolae-tablet.jpg    1x,
+                ./images/team-images/nicolae-tablet@2x.jpg 2x,
+                ./images/team-images/nicolae-desktop.jpg      1x,
+                ./images/team-images/nicolae-desktop@2x.jpg   2x
+              "
+              src="./images/team-images/nicolae-mobile.jpg"
+              alt="фото Николай Тарасов "
+            />
+          </picture>
         <h3 class="section-title-team-name">Николай Тарасов</h3>
        <p class="section-title-team-text" lang="en"> Marketing </p> 
        <ul class="social link list">
@@ -219,11 +340,44 @@
     </ul>
    </li>
    <li class="section-title-team"> 
-       <img 
-       srcset="./images/michail.jpg 300w, ./images/michail@2x.jpg 600w" 
-       src="./images/michail.jpg" 
-       sizes="(min-width: 300px) 300px, (min-width: 600px) 600px, (min-width: 1200px) 600px, 100vw"
-        alt="фото Михаил Ермаков">
+    <picture>
+        <source
+          srcset="
+            ./images/team-images/michail-mobile.jpg 1x,
+            ./images/team-images/michail-mobile@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/team-images/michail-desktop.jpg 1x,
+            ./images/team-images/michail-desktop@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/team-images/michail-tablet.jpg 1x,
+            ./images/team-images/michail-tablet@2x.jpg 2x
+          "
+          type="image/jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          srcset="
+            ./images/team-images/michail-mobile.jpg    1x,
+            ./images/team-images/michail-mobile@2x.jpg 2x,
+            ./images/team-images/michail-tablet.jpg    1x,
+            ./images/team-images/michail-tablet@2x.jpg 2x,
+            ./images/team-images/michail-desktop.jpg      1x,
+            ./images/team-images/michail-desktop@2x.jpg   2x
+          "
+          src="./images/team-images/michail-mobile.jpg"
+          alt="фото Михаил Ермаков"
+        />
+      </picture>
         <h3 class="section-title-team-name">Михаил Ермаков</h3>
         <p class="section-title-team-text" lang="en"> UI Designer </p> 
         <ul class="social link list">

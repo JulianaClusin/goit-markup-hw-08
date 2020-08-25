@@ -43,7 +43,6 @@ footer {
    }
   }
   .footer-subscribe {
-    text-align: center;
     position: relative;
     margin: 0px;
     
@@ -144,6 +143,9 @@ footer {
   .footer{
     text-align: center;
   }
+  .footer-subscribe {
+    text-align: center;
+  }
   }
 
   @media screen and (min-width: 1200px) {
@@ -168,17 +170,19 @@ footer {
   }
   .footer-subscribe-form {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: start;
   }
   .footer-subscribe-input{
   width:358px;
   }
   .footer-subscribe-label {
-  top: 25%;
+  top: 50%;
   }  
   .footer-section-address {
     flex-direction: column;
-    margin-right: 70px;
+    // margin-right: 70px;
   }
   }
 

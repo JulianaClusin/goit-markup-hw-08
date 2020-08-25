@@ -358,7 +358,7 @@ template {
   align-items: center;
 }
 
-.list, .logo.foot.link, .hero-section, .hero .hero-title, .features-section-for-images .icon-antenna, .what-are-we-doing, .portfolio.list {
+.list, .logo.foot.link, .hero-section, .hero-title, .features-section-for-images .icon-antenna, .what-are-we-doing, .portfolio.list {
   margin: 0;
   padding: 0;
 }
@@ -1127,7 +1127,6 @@ button {
 .hero-section {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
@@ -1136,13 +1135,31 @@ button {
   background-size: cover;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
-  .hero .hero-section {
-    background-image: url("../images/hero@2x.jpg");
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url("../images/hero.jpg");
   }
 }
 
-.hero .hero-title {
+@media screen and (min-width: 320px) {
+  .hero-section {
+    background-image: url("../images/hero-480.jpg");
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .hero-section {
+    background-image: url("../images/hero-768.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    background-image: url("../images/hero-1200.jpg");
+  }
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.36;
@@ -1481,7 +1498,6 @@ footer {
 }
 
 .footer-subscribe {
-  text-align: center;
   position: relative;
   margin: 0px;
 }
@@ -1584,6 +1600,9 @@ footer {
   .footer {
     text-align: center;
   }
+  .footer-subscribe {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1608,17 +1627,18 @@ footer {
   }
   .footer-subscribe-form {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
   }
   .footer-subscribe-input {
     width: 358px;
   }
   .footer-subscribe-label {
-    top: 25%;
+    top: 50%;
   }
   .footer-section-address {
     flex-direction: column;
-    margin-right: 70px;
   }
 }
 
